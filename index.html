@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vibecoder freelance - Je transforme vos idées en solutions digitales efficaces">
+    <title>VibeCoder - Développeur Freelance IA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER - Navigation sticky -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#home">VibeCoder</a>
+            </div>
+
+            <!-- Navigation Desktop -->
+            <nav class="header__nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#projets" class="nav__link">Projets</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Menu Toggle (Mobile) -->
+            <div class="header__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <h1 class="hero__title">
+                    Vibecoder Freelance — De l'idée au produit en quelques jours, pas en mois
+                </h1>
+                <p class="hero__subtitle">
+                    J'aide les entrepreneurs et startups à builder rapidement avec l'IA, sans sacrifier la qualité
+                </p>
+                <a href="#contact" class="hero__cta btn btn--primary">
+                    Discutons de votre projet
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services" id="services">
+            <div class="container services__container">
+                <h2 class="section__title">Services</h2>
+
+                <div class="services__grid">
+                    <!-- Service Card 1 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Sites Web Rapides</h3>
+                        <p class="service-card__description">
+                            Landing pages et sites vitrine en 48h
+                        </p>
+                    </article>
+
+                    <!-- Service Card 2 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Automations IA</h3>
+                        <p class="service-card__description">
+                            Workflows intelligents qui vous font gagner 10h/semaine
+                        </p>
+                    </article>
+
+                    <!-- Service Card 3 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Dashboards Sur-Mesure</h3>
+                        <p class="service-card__description">
+                            Visualisez vos données, prenez de meilleures décisions
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS SECTION -->
+        <section class="projets" id="projets">
+            <div class="container projets__container">
+                <h2 class="section__title">Projets Récents</h2>
+
+                <div class="projets__grid">
+                    <!-- Projet Card 1 -->
+                    <article class="projet-card">
+                        <div class="projet-card__image">
+                            <img src="https://placehold.co/600x400/2563eb/ffffff?text=EcoTrack" alt="EcoTrack Dashboard">
+                        </div>
+                        <div class="projet-card__content">
+                            <h3 class="projet-card__title">EcoTrack</h3>
+                            <p class="projet-card__description">
+                                Dashboard de suivi carbone pour PME (Next.js + Chart.js)
+                            </p>
+                            <div class="projet-card__tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet Card 2 -->
+                    <article class="projet-card">
+                        <div class="projet-card__image">
+                            <img src="https://placehold.co/600x400/06b6d4/ffffff?text=QuickLaunch" alt="QuickLaunch Landing">
+                        </div>
+                        <div class="projet-card__content">
+                            <h3 class="projet-card__title">QuickLaunch</h3>
+                            <p class="projet-card__description">
+                                Landing page SaaS avec tunnel de conversion (HTML/CSS/JS)
+                            </p>
+                            <div class="projet-card__tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet Card 3 -->
+                    <article class="projet-card">
+                        <div class="projet-card__image">
+                            <img src="https://placehold.co/600x400/1e293b/ffffff?text=AutoMail+Pro" alt="AutoMail Pro Automation">
+                        </div>
+                        <div class="projet-card__content">
+                            <h3 class="projet-card__title">AutoMail Pro</h3>
+                            <p class="projet-card__description">
+                                Automation email marketing (Make + Airtable)
+                            </p>
+                            <div class="projet-card__tags">
+                                <span class="tag">Make</span>
+                                <span class="tag">Airtable</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <div class="container contact__container">
+                <h2 class="section__title">Travaillons Ensemble</h2>
+                <p class="contact__text">
+                    Un projet en tête ? Discutons de comment je peux vous aider.
+                </p>
+                <a href="mailto:contact@vibecoder.dev" class="btn btn--primary">
+                    Me contacter
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__email">
+                <a href="mailto:contact@vibecoder.dev">contact@vibecoder.dev</a>
+            </p>
+            <div class="footer__social">
+                <a href="https://github.com/votreusername" target="_blank" rel="noopener" class="footer__link">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/votreusername" target="_blank" rel="noopener" class="footer__link">
+                    LinkedIn
+                </a>
+            </div>
+            <p class="footer__copy">
+                © 2025 VibeCoder. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
