@@ -199,3 +199,167 @@ img {
         padding: 0 var(--space-md);
     }
 }
+
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--color-bg-white);
+    z-index: 1000;
+    transition: box-shadow var(--transition-base);
+}
+
+
+/* Ombre apparaît au scroll (classe ajoutée par JS) */
+
+.header--scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+.header__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.header__logo a {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-secondary);
+    letter-spacing: -0.02em;
+}
+
+.header__logo a:hover {
+    color: var(--color-primary);
+}
+
+
+/* Navigation Desktop */
+
+.header__nav {
+    display: block;
+}
+
+.nav__list {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+}
+
+.nav__link {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    position: relative;
+    padding: var(--space-xs) 0;
+    transition: color var(--transition-fast);
+}
+
+.nav__link:hover {
+    color: var(--color-primary);
+}
+
+
+/* Soulignement animé au hover */
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width var(--transition-base);
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+
+/* Menu Toggle (Hamburger) - Caché sur desktop */
+
+.header__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.header__toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+    transition: all var(--transition-base);
+}
+
+
+/* Animation hamburger → X */
+
+.header__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.header__toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+/* ============================================
+   RESPONSIVE - MOBILE MENU
+   ============================================ */
+
+@media (max-width: 768px) {
+    .header__toggle {
+        display: flex;
+    }
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--color-bg-white);
+        box-shadow: var(--shadow-xl);
+        padding: calc(var(--header-height) + var(--space-xl)) var(--space-xl);
+        transition: right var(--transition-slow);
+    }
+    /* Menu ouvert (classe ajoutée par JS) */
+    .header__nav.show-menu {
+        right: 0;
+    }
+    .nav__list {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    .nav__link {
+        font-size: var(--text-base);
+        display: block;
+    }
+    /* Soulignement sur toute la largeur en mobile */
+    .nav__link::after {
+        width: 100%;
+        opacity: 0;
+    }
+    .nav__link:hover::after {
+        opacity: 1;
+    }
+}
