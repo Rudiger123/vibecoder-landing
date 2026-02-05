@@ -516,6 +516,27 @@ body {
     border-top: 1px solid var(--color-border);
 }
 
+.projet-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.projet-link::after {
+    content: '↗';
+    font-size: 11px;
+}
+
+.projet-link:hover {
+    transform: translateX(2px);
+}
+
 /* ============================================
    CTA SECTION
    ============================================ */
