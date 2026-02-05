@@ -4,211 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vibecoder freelance - Je transforme vos idées en solutions digitales efficaces">
-    <title>VibeCoder - Développeur Freelance IA</title>
-
-    <!-- Google Fonts -->
+    <title>Vibecoder - Landing Pages qui Convertissent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- HEADER - Navigation sticky -->
+    <!-- HEADER -->
     <header class="header" id="header">
-        <div class="container header__container">
-            <div class="header__logo">
-                <a href="#home">VibeCoder</a>
-            </div>
-
-            <!-- Navigation Desktop -->
-            <nav class="header__nav" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#projets" class="nav__link">Projets</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
+        <div class="container header-container">
+            <a href="#" class="logo">Rüdiger</a>
+            <nav class="nav" id="nav">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
-
-            <!-- Menu Toggle (Mobile) -->
-            <div class="header__toggle" id="nav-toggle">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="main">
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#projets" class="mobile-nav-link">Projets</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
 
-        <!-- HERO SECTION -->
-        <section class="hero" id="home">
-            <div class="container hero__container">
-                <h1 class="hero__title">
-                    Vibecoder Freelance — De l'idée au produit en quelques jours, pas en mois
-                </h1>
-                <p class="hero__subtitle">
-                    J'aide les entrepreneurs et startups à builder rapidement avec l'IA, sans sacrifier la qualité
-                </p>
-                <a href="#contact" class="hero__cta btn btn--primary">
-                    Discutons de votre projet
-                </a>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <h1 class="hero-title">
+                Landing page qui convertit,<br>livrée en 5 jours
+            </h1>
+            <p class="hero-subtitle">
+                Vous êtes expert dans votre domaine, mais votre page de vente ne fait pas le job ? Je crée votre landing page professionnelle avec copywriting orienté conversion, design moderne, et formation pour que vous restiez autonome.
+            </p>
+            <a href="#services" class="btn btn-primary">Voir mes offres</a>
+            <div class="hero-badges">
+                <span class="badge"><span class="check">✓</span> Livraison 5 jours</span>
+                <span class="badge"><span class="check">✓</span> Formation incluse</span>
+                <span class="badge"><span class="check">✓</span> Tarif fixe dès 150€</span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SERVICES SECTION -->
-        <section class="services" id="services">
-            <div class="container services__container">
-                <h2 class="section__title">Services</h2>
-
-                <div class="services__grid">
-                    <!-- Service Card 1 -->
-                    <article class="service-card">
-                        <div class="service-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Services</h2>
+                <p class="section-subtitle">3 packs adaptés à vos besoins, du lancement à l'automatisation</p>
+            </div>
+            <div class="services-grid">
+                <!-- Pack Starter -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3 class="service-title">Landing "Starter"</h3>
+                        <p class="service-target">Pour qui : Coachs et formateurs qui lancent leur 1ère offre</p>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-label">Ce que tu obtiens :</p>
+                        <ul class="service-list">
+                            <li>1 page de vente (Hero + Bénéfices + Témoignages + CTA)</li>
+                            <li>Design responsive (mobile + desktop)</li>
+                            <li>Formulaire de contact ou paiement Stripe</li>
+                            <li>Hosting gratuit 1 an (Netlify)</li>
+                            <li>1h de formation : comment modifier le texte/images toi-même</li>
+                        </ul>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-meta">
+                            <span class="service-delay">⏱️ 5 jours ouvrés</span>
                         </div>
-                        <h3 class="service-card__title">Sites Web Rapides</h3>
-                        <p class="service-card__description">
-                            Landing pages et sites vitrine en 48h
-                        </p>
-                    </article>
+                        <div class="service-price">150€ <span class="price-alt">(ou 100 000 FCFA)</span></div>
+                    </div>
+                </div>
 
-                    <!-- Service Card 2 -->
-                    <article class="service-card">
-                        <div class="service-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                            </svg>
+                <!-- Pack Pro -->
+                <div class="service-card service-card-featured">
+                    <div class="service-badge">Populaire</div>
+                    <div class="service-header">
+                        <h3 class="service-title">Landing "Pro"</h3>
+                        <p class="service-target">Pour qui : Infopreneurs qui ont déjà des clients et veulent scaler</p>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-label">Ce que tu obtiens :</p>
+                        <ul class="service-list">
+                            <li><strong>Tout du Pack Starter</strong></li>
+                            <li>Copywriting optimisé (j'écris les accroches avec toi)</li>
+                            <li>Section témoignages dynamique</li>
+                            <li>Intégration email (Mailchimp ou autre)</li>
+                            <li>Pixel Facebook/Google Analytics</li>
+                            <li>2h de formation : tracking et optimisation</li>
+                        </ul>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-meta">
+                            <span class="service-delay">⏱️ 7 jours ouvrés</span>
                         </div>
-                        <h3 class="service-card__title">Automations IA</h3>
-                        <p class="service-card__description">
-                            Workflows intelligents qui vous font gagner 10h/semaine
-                        </p>
-                    </article>
+                        <div class="service-price">300€ <span class="price-alt">(ou 200 000 FCFA)</span></div>
+                    </div>
+                </div>
 
-                    <!-- Service Card 3 -->
-                    <article class="service-card">
-                        <div class="service-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="18" y1="20" x2="18" y2="10"></line>
-                                <line x1="12" y1="20" x2="12" y2="4"></line>
-                                <line x1="6" y1="20" x2="6" y2="14"></line>
-                            </svg>
+                <!-- Pack Automation -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3 class="service-title">Landing + Automation</h3>
+                        <p class="service-target">Pour qui : Entrepreneurs qui veulent automatiser la vente</p>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-label">Ce que tu obtiens :</p>
+                        <ul class="service-list">
+                            <li><strong>Tout du Pack Pro</strong></li>
+                            <li>Automation : email automatique après achat</li>
+                            <li>Automation : relance si panier abandonné</li>
+                            <li>Dashboard simple pour suivre les conversions</li>
+                            <li>Support 1 mois après livraison</li>
+                        </ul>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-meta">
+                            <span class="service-delay">⏱️ 10 jours ouvrés</span>
                         </div>
-                        <h3 class="service-card__title">Dashboards Sur-Mesure</h3>
-                        <p class="service-card__description">
-                            Visualisez vos données, prenez de meilleures décisions
-                        </p>
-                    </article>
+                        <div class="service-price">500€ <span class="price-alt">(ou 350 000 FCFA)</span></div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- PROJETS SECTION -->
-        <section class="projets" id="projets">
-            <div class="container projets__container">
-                <h2 class="section__title">Projets Récents</h2>
+    <!-- PROJETS SECTION -->
+    <section class="projets" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets Réalisés</h2>
+                <p class="section-subtitle">Des démos pour montrer ce que je peux faire pour vous</p>
+            </div>
+            <div class="projets-grid">
+                <!-- Projet 1 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="images/projet-fitness.jpg" alt="Landing Page Coach Fitness">
+                        <span class="projet-tag">Démo</span>
+                    </div>
+                    <div class="projet-content">
+                        <h3 class="projet-title">Landing Page Coach Fitness</h3>
+                        <p class="projet-desc">Page de vente pour un programme "Perte de poids 30 jours"</p>
+                        <div class="projet-stack">
+                            <span class="stack-item">HTML/CSS/JS</span>
+                            <span class="stack-item">Animations</span>
+                            <span class="stack-item">Formulaire</span>
+                        </div>
+                        <p class="projet-note">Projet démo — créé pour démontrer mes compétences</p>
+                    </div>
+                </div>
 
-                <div class="projets__grid">
-                    <!-- Projet Card 1 -->
-                    <article class="projet-card">
-                        <div class="projet-card__image">
-                            <img src="https://placehold.co/600x400/2563eb/ffffff?text=EcoTrack" alt="EcoTrack Dashboard">
+                <!-- Projet 2 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="images/projet-marketing.jpg" alt="Landing Page Formation Marketing">
+                        <span class="projet-tag">Démo</span>
+                    </div>
+                    <div class="projet-content">
+                        <h3 class="projet-title">Landing Page Formation Marketing</h3>
+                        <p class="projet-desc">Capture emails pour webinaire gratuit</p>
+                        <div class="projet-stack">
+                            <span class="stack-item">Design épuré</span>
+                            <span class="stack-item">Mailchimp</span>
                         </div>
-                        <div class="projet-card__content">
-                            <h3 class="projet-card__title">EcoTrack</h3>
-                            <p class="projet-card__description">
-                                Dashboard de suivi carbone pour PME (Next.js + Chart.js)
-                            </p>
-                            <div class="projet-card__tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Chart.js</span>
-                            </div>
-                        </div>
-                    </article>
+                        <p class="projet-note">Projet démo — créé pour démontrer mes compétences</p>
+                    </div>
+                </div>
 
-                    <!-- Projet Card 2 -->
-                    <article class="projet-card">
-                        <div class="projet-card__image">
-                            <img src="https://placehold.co/600x400/06b6d4/ffffff?text=QuickLaunch" alt="QuickLaunch Landing">
+                <!-- Projet 3 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="images/projet-saas.png" alt="Landing Page SaaS">
+                        <span class="projet-tag">Démo</span>
+                    </div>
+                    <div class="projet-content">
+                        <h3 class="projet-title">Landing Page SaaS</h3>
+                        <p class="projet-desc">Page produit pour outil de gestion</p>
+                        <div class="projet-stack">
+                            <span class="stack-item">Sections modernes</span>
+                            <span class="stack-item">Pricing table</span>
+                            <span class="stack-item">FAQ</span>
                         </div>
-                        <div class="projet-card__content">
-                            <h3 class="projet-card__title">QuickLaunch</h3>
-                            <p class="projet-card__description">
-                                Landing page SaaS avec tunnel de conversion (HTML/CSS/JS)
-                            </p>
-                            <div class="projet-card__tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Projet Card 3 -->
-                    <article class="projet-card">
-                        <div class="projet-card__image">
-                            <img src="https://placehold.co/600x400/1e293b/ffffff?text=AutoMail+Pro" alt="AutoMail Pro Automation">
-                        </div>
-                        <div class="projet-card__content">
-                            <h3 class="projet-card__title">AutoMail Pro</h3>
-                            <p class="projet-card__description">
-                                Automation email marketing (Make + Airtable)
-                            </p>
-                            <div class="projet-card__tags">
-                                <span class="tag">Make</span>
-                                <span class="tag">Airtable</span>
-                            </div>
-                        </div>
-                    </article>
+                        <p class="projet-note">Projet démo — créé pour démontrer mes compétences</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CONTACT SECTION -->
-        <section class="contact" id="contact">
-            <div class="container contact__container">
-                <h2 class="section__title">Travaillons Ensemble</h2>
-                <p class="contact__text">
-                    Un projet en tête ? Discutons de comment je peux vous aider.
-                </p>
-                <a href="mailto:contact@vibecoder.dev" class="btn btn--primary">
-                    Me contacter
-                </a>
-            </div>
-        </section>
-
-    </main>
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="contact">
+        <div class="container cta-container">
+            <h2 class="cta-title">Prêt à lancer votre landing page ?</h2>
+            <p class="cta-subtitle">Discutons de votre projet et voyons comment je peux vous aider à convertir plus de visiteurs en clients.</p>
+            <a href="mailto:feutsoprudiger@gmail.com" class="btn btn-primary btn-large">Me contacter</a>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container footer__container">
-            <p class="footer__email">
-                <a href="mailto:contact@vibecoder.dev">contact@vibecoder.dev</a>
-            </p>
-            <div class="footer__social">
-                <a href="https://github.com/votreusername" target="_blank" rel="noopener" class="footer__link">
-                    GitHub
-                </a>
-                <a href="https://linkedin.com/in/votreusername" target="_blank" rel="noopener" class="footer__link">
-                    LinkedIn
-                </a>
+        <div class="container footer-container">
+            <div class="footer-content">
+                <p class="footer-email">📧 feutsoprudiger@gmail.com</p>
+                <div class="footer-links">
+                    <a href="https://github.com/rudiger123" target="_blank" class="footer-link">GitHub</a>
+                    <!--<a href="https://linkedin.com/in/vibecoder" target="_blank" class="footer-link">LinkedIn</a>-->
+                </div>
             </div>
-            <p class="footer__copy">
-                © 2025 VibeCoder. Tous droits réservés.
-            </p>
+            <p class="footer-copyright">© 2026 Rüdiger. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 
